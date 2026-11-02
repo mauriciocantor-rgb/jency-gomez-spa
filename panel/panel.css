@@ -1,0 +1,46 @@
+.panel{--oro:#86661a;--oro-osc:#6c5114;--rubor:#f9e4de;--crema:#fdf7f3;--tinta:#463830;--suave:#6f5f55;--linea:#e6d6c4;--peligro:#a13a2e;
+  min-height:100vh;background:var(--crema);color:var(--tinta);font:400 1rem/1.5 "Mulish",system-ui,sans-serif;padding-bottom:7rem}
+.panel *{box-sizing:border-box}
+.panel h1,.panel h2,.panel h3,.panel p{margin:0}
+.panel-barra{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--linea);display:flex;align-items:center;gap:.7rem;padding:.7rem 1rem;min-height:60px}
+.panel-barra h1{font:500 1.5rem/1.1 "Cormorant Garamond",Georgia,serif;flex:1}
+.panel-cuerpo{width:min(620px,100%);margin:auto;padding:1rem;display:grid;grid-template-columns:minmax(0,1fr);gap:1rem}
+.panel-tarjeta{background:#fff;border:1px solid var(--linea);border-radius:12px;padding:1rem;display:grid;grid-template-columns:minmax(0,1fr);gap:.85rem;min-width:0}
+.panel input[type=file]{max-width:100%;width:100%;font-size:.9rem}
+.panel-plegable{display:block}
+.panel-plegable>*+*{margin-top:.85rem}
+.panel-plegable summary{cursor:pointer;display:flex;justify-content:space-between;gap:1rem;align-items:baseline;list-style:none;min-height:30px}
+.panel-plegable summary::-webkit-details-marker{display:none}
+.panel-plegable summary span{flex:none;font-size:.88rem;color:var(--suave)}
+.panel-tarjeta h2{font:500 1.35rem/1.2 "Cormorant Garamond",Georgia,serif}
+.panel-ayuda{font-size:.9rem;color:var(--suave)}
+.panel label.campo{display:grid;gap:.3rem;font-weight:700;font-size:.95rem}
+.panel input[type=text],.panel input[type=password],.panel input[type=url],.panel input[type=email],.panel input[type=tel],.panel textarea,.panel select{width:100%;font:400 1rem "Mulish",system-ui,sans-serif;color:var(--tinta);background:#fff;border:1px solid #bfae9c;border-radius:8px;padding:.7rem .75rem;min-height:46px}
+.panel textarea{min-height:88px;resize:vertical}
+.panel button{font:700 .98rem "Mulish",system-ui,sans-serif;min-height:46px;border-radius:999px;padding:.55rem 1.1rem;border:1px solid var(--oro);background:#fff;color:var(--oro);cursor:pointer}
+.panel button.principal{background:var(--oro);color:#fff}
+.panel button.principal:hover{background:var(--oro-osc)}
+.panel button.peligro{border-color:var(--peligro);color:var(--peligro)}
+.panel button:disabled{opacity:.5;cursor:default}
+.panel button.mini{min-height:40px;min-width:40px;padding:.3rem .7rem;font-size:.9rem}
+.panel-menu{display:grid;gap:.7rem}
+.panel-menu button{display:block;width:100%;text-align:left;border-radius:12px;border-color:var(--linea);padding:1rem;color:var(--tinta)}
+.panel-menu button:hover{border-color:var(--oro);background:var(--rubor)}
+.panel-menu b{display:block;font-size:1.08rem}
+.panel-menu span{font-weight:400;font-size:.9rem;color:var(--suave)}
+.panel-interruptor{display:flex;gap:.7rem;align-items:center;font-weight:700}
+.panel-interruptor input{width:24px;height:24px;accent-color:var(--oro)}
+.panel-fila{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center}
+.panel-pendiente{background:#fff7dd;border:1px solid #d9bf73;border-radius:10px;padding:.8rem 1rem;font-size:.93rem}
+.panel-foto{display:flex;flex-wrap:wrap;gap:.9rem;align-items:center}
+.panel-foto label{flex:1 1 160px;min-width:0}
+.panel-foto img{width:96px;height:96px;object-fit:cover;border-radius:10px;border:1px solid var(--linea);flex:none}
+.panel-sinfoto{width:96px;height:96px;flex:none;display:grid;place-items:center;text-align:center;font-size:.85rem;color:var(--suave);background:var(--rubor);border-radius:10px}
+.panel-publicar{position:fixed;left:0;right:0;bottom:0;z-index:6;background:#fff;border-top:1px solid var(--linea);padding:.7rem 1rem;display:flex;gap:.6rem;justify-content:center;align-items:center;flex-wrap:wrap;box-shadow:0 -6px 20px rgba(70,56,48,.1)}
+.panel-publicar span{font-size:.9rem;color:var(--suave);flex:1 1 100%;text-align:center}
+.panel-publicar button{flex:1 1 40%;max-width:240px}
+.panel-aviso{position:fixed;left:1rem;right:1rem;bottom:7.5rem;z-index:7;margin:auto;max-width:560px;background:var(--tinta);color:#fff;border-radius:10px;padding:.8rem 1rem;display:flex;justify-content:space-between;gap:1rem;align-items:center}
+.panel-aviso button{background:transparent;color:#fff;border-color:#fff;min-height:38px}
+.panel-error{color:var(--peligro);font-weight:700}
+.panel-demo{background:var(--rubor);text-align:center;padding:.5rem 1rem;font-size:.9rem}
+.panel-logo{width:190px;margin:1rem auto 0;display:block;mix-blend-mode:multiply}
